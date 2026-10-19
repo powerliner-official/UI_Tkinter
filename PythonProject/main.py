@@ -36,7 +36,6 @@ age_label.pack()
 age_entry = tk.Entry(window, width=30)
 age_entry.pack(pady=5)
 
-
 # Function to check user information
 def check_user():
     name = name_entry.get().strip()
@@ -92,11 +91,10 @@ def check_user():
     print("Phone Number:", phone)
     print("Age:", age)
 
-
 # Submit button
 submit_button = tk.Button(
     window,
-    text="Register",
+    text="Check",
     command=check_user,
     width=22
 )
