@@ -41,16 +41,6 @@ tk.Label(
     fg="#8DA9DB"
 ).pack(pady=(0, 35))
 
-tk.Label(
-    sidebar,
-    text="MAIN MENU",
-    font=("Arial", 10, "bold"),
-    bg="#1B2038",
-    fg="#8DA9DB",
-    anchor="w"
-).pack(fill="x", padx=20, pady=10)
-
-
 def create_menu_button(text):
     button = tk.Button(
         sidebar,
@@ -69,15 +59,6 @@ def create_menu_button(text):
     )
     button.pack(fill="x", padx=10, pady=3)
     return button
-
-
-create_menu_button("  Home")
-create_menu_button("  About PowerLiner")
-create_menu_button("  Services")
-create_menu_button("  Training Courses")
-create_menu_button("  Projects")
-create_menu_button("  Contact Us")
-create_menu_button("  Settings")
 
 tk.Label(
     sidebar,
